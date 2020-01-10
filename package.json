@@ -1,6 +1,6 @@
 {
   "name": "egg-view-rax-ssr",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "rax server side render for egg",
   "eggPlugin": {
     "name": "raxssr"
