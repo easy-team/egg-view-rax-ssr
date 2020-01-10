@@ -1,0 +1,6 @@
+{
+  "extends": "eslint-config-egg",
+  "rules": {
+    "prefer-promise-reject-errors": "off"
+  }
+}
