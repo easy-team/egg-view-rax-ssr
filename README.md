@@ -3,22 +3,20 @@
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/ egg-view-rax-ssr.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/ egg-view-rax-ssr
+[npm-image]: https://img.shields.io/npm/v/egg-view-rax-ssr.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/egg-view-rax-ssr
 [travis-image]: https://img.shields.io/travis/hubcarl/ egg-view-rax-ssr.svg?style=flat-square
-[travis-url]: https://travis-ci.org/hubcarl/ egg-view-rax-ssr
+[travis-url]: https://travis-ci.org/easy-team/egg-view-rax-ssr
 [codecov-image]: https://img.shields.io/codecov/c/github/hubcarl/ egg-view-rax-ssr.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/hubcarl/ egg-view-rax-ssr?branch=master
-[david-image]: https://img.shields.io/david/hubcarl/ egg-view-rax-ssr.svg?style=flat-square
-[david-url]: https://david-dm.org/hubcarl/ egg-view-rax-ssr
-[snyk-image]: https://snyk.io/test/npm/ egg-view-rax-ssr/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/ egg-view-rax-ssr
-[download-image]: https://img.shields.io/npm/dm/ egg-view-rax-ssr.svg?style=flat-square
-[download-url]: https://npmjs.org/package/ egg-view-rax-ssr
+[codecov-url]: https://codecov.io/github/easy-team/egg-view-rax-ssr?branch=master
+[david-image]: https://img.shields.io/david/easy-team/ egg-view-rax-ssr.svg?style=flat-square
+[david-url]: https://david-dm.org/easy-team/egg-view-rax-ssr
+[snyk-image]: https://snyk.io/test/npm/egg-view-rax-ssr/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/egg-view-rax-ssr
+[download-image]: https://img.shields.io/npm/dm/egg-view-rax-ssr.svg?style=flat-square
+[download-url]: https://npmjs.org/package/egg-view-rax-ssr
 
 Rax Server Side Render Plugin for Egg
 
@@ -119,11 +117,11 @@ exports.asset = function* (ctx) {
 
 ## Example
 
-Rax server side render example, please see [egg-rax-webpack-boilerplate](https://github.com/easy-team/egg-rax-webpack-boilerplate/tree/rax)
+Rax server side render example, please see [egg-react-webpack-boilerplate](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/rax)
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/easy-team/egg-rax-webpack-boilerplate/issues).
+Please open an issue [here](https://github.com/easy-team/egg-react-webpack-boilerplate/issues).
 
 ## License
 
