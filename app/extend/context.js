@@ -1,20 +1,20 @@
 'use strict';
 module.exports = {
   renderClient(name, locals, options) {
-    return this.renderraxClient(name, locals, options);
+    return this.renderRaxClient(name, locals, options);
   },
 
   renderAsset(name, locals, options) {
-    return this.renderraxAsset(name, locals, options);
+    return this.renderRaxAsset(name, locals, options);
   },
 
-  renderraxAsset(name, locals, options) {
+  renderRaxAsset(name, locals, options) {
     return this.app.rax.renderAsset(this, name, locals, options).then(html => {
       this.body = html;
     });
   },
 
-  renderraxClient(name, locals = {}, options = {}) {
+  renderRaxClient(name, locals = {}, options = {}) {
     const config = this.app.config.raxssr;
     const layout = options.layout || config.layout;
     locals = this.app.rax.mergeLocals(this, locals, options, false);

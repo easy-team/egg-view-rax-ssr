@@ -21,85 +21,34 @@ describe('test/view-rax-ssr.test.js', () => {
       .expect('hi, raxssr')
       .expect(200);
   });
-  it('should GET /render', () => {
+  it('should GET /ssr', () => {
     return request(app.callback())
-      .get('/render')
+      .get('/ssr')
       .expect(200)
       .expect(res => {
         assert(res.text.indexOf('"csrf"') > -1);
-        assert(res.text.indexOf('rax server side render for component') > -1);
+        assert(res.text.includes('<title>Egg Rax SSR</title>'));
+        assert(res.text.includes('<h2>Egg Rax Server Side Render</h2>'));
       });
   });
-  it('should GET /renderMarkup', () => {
+  it('should GET /csr', () => {
     return request(app.callback())
-      .get('/renderMarkup')
-      .expect(200)
-      .expect(res => {
-        assert(res.text.indexOf('rax server side render for component!') > -1);
-      });
-  });
-  it('should GET /renderError', () => {
-    return request(app.callback())
-      .get('/error')
-      .expect(200)
-      .expect(res => {
-        assert(res.text.indexOf('</body></html>') > -1);
-      });
-  });
-  it('should GET /renderClient', () => {
-    return request(app.callback())
-      .get('/renderClient')
+      .get('/csr')
       .expect(200)
       .expect(res => {
         assert(res.text.indexOf('"csrf"') > -1);
-        assert(res.text.indexOf('"egg renderClient"') > -1);
-        assert(res.text.indexOf('rax client render') > -1);
+        assert(res.text.includes('"message":"Egg Rax Client Side Render"'));
       });
   });
-  it('should GET /renderraxClient', () => {
+  it('should GET /asset', () => {
     return request(app.callback())
-      .get('/renderraxClient')
+      .get('/asset')
       .expect(200)
       .expect(res => {
-        assert(res.text.indexOf('"csrf"') > -1);
-        assert(res.text.indexOf('"egg renderClient"') > -1);
-        assert(res.text.indexOf('rax client render') > -1);
-      });
-  });
-  it('should GET /renderAsset', () => {
-    return request(app.callback())
-      .get('/renderAsset')
-      .expect(200)
-      .expect(res => {
-        assert(res.text.indexOf('<title>renderAsset</title>') > -1);
-        assert(res.text.indexOf('src="/public/js/common.52446b6b.js"') > -1);
-        assert(res.text.indexOf('window.__INITIAL_STATE__ = {"title":"renderAsset","message":"rax renderAsset test"}') > -1);
-      });
-  });
-  it('should GET /renderraxAsset', () => {
-    return request(app.callback())
-      .get('/renderraxAsset')
-      .expect(200)
-      .expect(res => {
-        assert(res.text.indexOf('<title>renderAsset</title>') > -1);
-        assert(res.text.indexOf('src="/public/js/common.52446b6b.js"') > -1);
-        assert(res.text.indexOf('window.__INITIAL_STATE__ = {"title":"renderAsset","message":"rax renderAsset test"}') > -1);
-      });
-  });
-  it('should GET /renderForStateless', () => {
-    return request(app.callback())
-      .get('/stateless')
-      .expect(200)
-      .expect(res => {
-        assert(res.text.indexOf('Egg + rax + Webpack Server Side Render Stateless Component') > -1);
-      });
-  });
-  it('should GET /renderForPromiseMode', () => {
-    return request(app.callback())
-      .get('/promise')
-      .expect(200)
-      .expect(res => {
-        assert(res.text.indexOf('Egg + rax + Webpack Server Side Render Promise Mode') > -1);
+        assert(res.text.includes('<title>Egg Rax Asset</title>'));
+        assert(res.text.includes('/public/js/runtime'));
+        assert(res.text.includes('/public/js/chunk/common'));
+        assert(res.text.includes('/public/js/chunk/test'));
       });
   });
 });

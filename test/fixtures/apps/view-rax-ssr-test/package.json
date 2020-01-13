@@ -1,4 +1,13 @@
 {
   "name": "view-rax-ssr-test",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "easy clean",
+    "build": "easy build"
+  },
+  "devDependencies": {
+    "@easy-team/easywebpack-cli": "^4.0.0",
+    "@easy-team/easywebpack-react": "^4.1.0",
+    "egg-view-nunjucks": "^2.2.0"
+  }
 }

@@ -1,24 +1,13 @@
 {
-  "component.js": "/public/js/hello/component.a5b20c7a.js",
-  "component.css": "/public/css/hello/component.93dab602.css",
-  "layout.js": "/public/js/layout.6c377a3b.js",
-  "vendor.js": "/public/js/vendor.841eac66.js",
+  "common.js": "/public/js/chunk/common.f20f547b.js",
+  "runtime.js": "/public/js/runtime.c36fb66a.js",
+  "test.js": "/public/js/chunk/test.e93d0224.js",
   "deps": {
-    "component.js": {
+    "test.js": {
       "js": [
-        "/public/js/vendor.841eac66.js",
-        "/public/js/common.52446b6b.js",
-        "/public/js/hello/component.a5b20c7a.js"
-      ],
-      "css": [
-        "/public/css/hello/component.93dab602.css"
-      ]
-    },
-    "layout.js": {
-      "js": [
-        "/public/js/vendor.841eac66.js",
-        "/public/js/common.52446b6b.js",
-        "/public/js/layout.6c377a3b.js"
+        "/public/js/runtime.c36fb66a.js",
+        "/public/js/chunk/common.f20f547b.js",
+        "/public/js/chunk/test.e93d0224.js"
       ],
       "css": []
     }

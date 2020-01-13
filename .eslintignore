@@ -1,3 +1,5 @@
 coverage
+node_modules
+public
 test/fixtures/apps/view-rax-ssr-no-manifest-test/app/view
 test/fixtures/apps/view-rax-ssr-test/app/view
