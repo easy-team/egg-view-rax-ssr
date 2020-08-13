@@ -15,7 +15,7 @@
   "dependencies": {
     "rax-is-valid-element": "^1.0.0",
     "rax-server-renderer": "^1.1.5",
-    "serialize-javascript": "^2.0.0",
+    "serialize-javascript": "^4.0.0",
     "server-side-render-resource": "^1.0.2"
   },
   "peerDependencies": {
